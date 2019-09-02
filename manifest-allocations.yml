@@ -3,7 +3,7 @@ applications:
   path: ./applications/allocations-server/build/libs/allocations-server.jar
   routes:
   - route: allocations-pal-zaabskr.cfapps.io
-  memory: 1G
+  memory: 450M
   instances: 1
   env:
     REGISTRATION_SERVER_ENDPOINT: http://registration-pal-zaabskr.cfapps.io
