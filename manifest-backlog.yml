@@ -6,7 +6,7 @@ applications:
   memory: 450M
   instances: 1
   env:
-    REGISTRATION_SERVER_ENDPOINT: http://registration-pal-zaabskr.cfapps.io
     JBP_CONFIG_OPEN_JDK_JRE: '{ jre: { version: 11.+ } }'
   services:
   - tracker-backlog-database
+  - tracker-service-registry

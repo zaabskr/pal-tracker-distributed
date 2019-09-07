@@ -5,7 +5,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.ComponentScan;
 
 import java.util.TimeZone;
-
+import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
 
 @SpringBootApplication
 @ComponentScan({
@@ -15,6 +15,7 @@ import java.util.TimeZone;
     "io.pivotal.pal.tracker.users",
     "io.pivotal.pal.tracker.registration"
 })
+@EnableEurekaClient
 public class App {
     public static void main(String[] args) {
         TimeZone.setDefault(TimeZone.getTimeZone("UTC"));
